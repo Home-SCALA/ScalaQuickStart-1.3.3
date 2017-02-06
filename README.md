@@ -5,7 +5,7 @@
 
 
 
-> [scala_slides1.pdf](http://ccfit.nsu.ru/~den/Scala/scala_slides1.pdf)
+> [scala_slides1.pdf](scala_slides1.pdf)
 >
 > [**Основы синтаксиса**](http://ccfit.nsu.ru/~den/Scala/scala_slides2.pdf)
 >
