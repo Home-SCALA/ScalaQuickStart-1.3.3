@@ -48,7 +48,7 @@ object Task1_2{
     if (0<item) reversePrint(item-1)
     0
   }
-  val typeReversePrint: (Int) => Int = reversePrint /* (1) объявление функции-2 */
+  val typeReversePrint: Int => Int = reversePrint /* (1) объявление функции-2 */
 
   /*
    * варианты вызова печати...
@@ -56,13 +56,13 @@ object Task1_2{
    */
   /* (моя перегруженная функция...) */
   /* (2) определение функции-3 */
-  def straightReverse(size: Int, funcStraight: ((Int, Int) => Int), funcReverse: ((Int) => Int)) = {
+  def straightReverse(size: Int, funcStraight: ((Int, Int) => Int), funcReverse: (Int => Int)) = {
     /* (3) вызов функции-1,2 */
     funcStraight(0, size)
     funcReverse(size)
     println()
   }
-  def straightReverse(size: Int, funcReverse: ((Int) => Int), funcStraight: ((Int, Int) => Int)) = {
+  def straightReverse(size: Int, funcReverse: (Int => Int), funcStraight: ((Int, Int) => Int)) = {
     funcReverse(size)
     funcStraight(0, size)
     println()
@@ -102,12 +102,12 @@ object Task1_2{
   /* (мои шаблонны) */
   /* (1) объявление функции-4 */
   val typeMyPrint1: (Int, Int) => Int = myPrint1
-  val typeMyPrint2: (Int) => Int = myPrint3
-  val typeMyPrint3: (Int) => Int = myPrint4
+  val typeMyPrint2: Int => Int = myPrint3
+  val typeMyPrint3: Int => Int = myPrint4
   val typeMyPrint4: (Int, Int) => Int = myPrint2
 
   /* (моя перегруженная функция...) */
   /* (2) определение функции-5 */
   def myPrint(size: Int, func: ((Int, Int) => Int)) = func(0, size)
-  def myPrint(size: Int, func: ((Int) => Int)) = func(size)
+  def myPrint(size: Int, func: (Int => Int)) = func(size)
 }
