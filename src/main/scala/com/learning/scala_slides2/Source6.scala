@@ -8,7 +8,7 @@ object Source6 {
   def main(args: Array[String]): Unit = {
     println( "factorial vs 5 = " + factorial(5) )
 
-    println( "combination vs 2,3 = " + combination(2, 3) )
+    println( "combination vs 3,4 = " + combination(3, 4) )
 //    println( fact(10) ) // compile error
   }
 
