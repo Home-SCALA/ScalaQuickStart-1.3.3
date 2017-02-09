@@ -60,7 +60,7 @@ object MyPrint {
   }
 
   /**
-   * (3) Делаю перегруженную функцию
+   * (3) Делаю перегруженную функцию - просто делаю хитрый способ передачи параметров...
    */
   def test(a: Double, b: Double, c: Double, d: Double, func: ((Double,Double,Double,Double) => Unit)) { func(a,b,c,d) }
 }
